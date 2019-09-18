@@ -1,0 +1,25 @@
+{
+    "name": "kilyakus/yii2-widget-ktdatatable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tanakorn Phompak",
+            "email": "mcomsciencermu@gmail.com"
+        },
+        {
+            "name": "Edited: Kilyakus",
+            "email": "aleksandr.kilyakov@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "kilyakus/yii2-widget-base": "*",
+        "kilyakus/yii2-widget-portlet": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "kilyakus\\ktdatatable\\": "src"
+        }
+    }
+}

@@ -1,0 +1,249 @@
+.kt-datatable {display:none;}
+
+/*.kt-datatable.kt-datatable--default {display:block;margin-bottom:25px;}*/
+  .kt-datatable.kt-datatable--default > table {border-collapse:collapse;overflow:hidden;display:none;width:100%;}
+    .kt-datatable.kt-datatable--default > table > thead,
+    .kt-datatable.kt-datatable--default > table > tbody,
+    .kt-datatable.kt-datatable--default > table > tfoot {visibility:hidden;/*display:block;*/}
+      .kt-datatable.kt-datatable--default > table > thead tr,
+      .kt-datatable.kt-datatable--default > table > tbody tr,
+      .kt-datatable.kt-datatable--default > table > tfoot tr {width:100%;}
+        .kt-datatable.kt-datatable--default > table > thead tr > th,
+        .kt-datatable.kt-datatable--default > table > tbody tr > td,
+        .kt-datatable.kt-datatable--default > table > tfoot tr > td {vertical-align:middle;padding:10px;font-size:1rem;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th:first-child,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td:first-child,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td:first-child {  padding-left:25px;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th:last-child,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td:last-child,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td:last-child {  padding-right:25px;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--left,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--left,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--left {  text-align:left;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--left > span,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--left > span,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--left > span {    text-align:left;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--right,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--right,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--right {  text-align:right;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--right > span,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--right > span,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--right > span {    text-align:right;}
+              .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--right > span > i,
+              .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--right > span > i,
+              .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--right > span > i {      right:0;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--center,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--center,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--center {  text-align:center;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--center > span,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--center > span,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--center > span {    text-align:center;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--sort,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--sort,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--sort {  cursor:pointer;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--sort i,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--sort i,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--sort i {    font-size:0.6rem;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--resizing,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--resizing,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--resizing {  cursor:col-resize;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th > span,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td > span,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td > span {  display:block;  overflow:hidden;  text-overflow:ellipsis;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--check,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--check,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--check {  text-align:center;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--check > span,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--check > span,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--check > span {    overflow:visible;}
+              .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--check > span > .kt-checkbox,
+              .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--check > span > .kt-checkbox,
+              .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--check > span > .kt-checkbox {      top:2px;  padding:0;  margin:0 0 0 0;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__toggle-detail > span,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__toggle-detail > span,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__toggle-detail > span {  width:12px;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__toggle-detail > .kt-datatable__toggle-detail,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__toggle-detail > .kt-datatable__toggle-detail,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__toggle-detail > .kt-datatable__toggle-detail {  display:inline-block;  text-align:right;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__toggle-detail > .kt-datatable__toggle-detail > i,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__toggle-detail > .kt-datatable__toggle-detail > i,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__toggle-detail > .kt-datatable__toggle-detail > i {    font-size:1.4rem;width:12px;}
+          .kt-datatable.kt-datatable--default > table > thead tr > th .dropdown,
+          .kt-datatable.kt-datatable--default > table > tbody tr > td .dropdown,
+          .kt-datatable.kt-datatable--default > table > tfoot tr > td .dropdown {  display:inline-block;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th .dropdown .dropdown-menu,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td .dropdown .dropdown-menu,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td .dropdown .dropdown-menu {    margin-top:0.5rem;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th .dropdown.dropup .dropdown-menu,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td .dropdown.dropup .dropdown-menu,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td .dropdown.dropup .dropdown-menu {    margin-top:auto;margin-bottom:0.5rem;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th .dropdown .dropdown-menu.dropdown-menu-right,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td .dropdown .dropdown-menu.dropdown-menu-right,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td .dropdown .dropdown-menu.dropdown-menu-right {    margin-right:-0.8rem;/*rtl:ignore*/
+              margin-left:65px;}
+            .kt-datatable.kt-datatable--default > table > thead tr > th .dropdown .dropdown-menu.dropdown-menu-left,
+            .kt-datatable.kt-datatable--default > table > tbody tr > td .dropdown .dropdown-menu.dropdown-menu-left,
+            .kt-datatable.kt-datatable--default > table > tfoot tr > td .dropdown .dropdown-menu.dropdown-menu-left {    margin-left:-10rem;}
+      .kt-datatable.kt-datatable--default > table > thead > .kt-datatable__lock,
+      .kt-datatable.kt-datatable--default > table > tbody > .kt-datatable__lock,
+      .kt-datatable.kt-datatable--default > table > tfoot > .kt-datatable__lock {border:0;}
+    .kt-datatable.kt-datatable--default > table > thead tr > th > span,
+    .kt-datatable.kt-datatable--default > table > tfoot tr > td > span {font-weight:500;vertical-align:middle;}
+    .kt-datatable.kt-datatable--default > table > thead tr > th {padding:16px 10px;}
+      .kt-datatable.kt-datatable--default > table > thead tr > th > span > i {display:inline-block;position:relative;right:-10px;line-height:0;vertical-align:middle;font-size:1.1rem;}
+    .kt-datatable.kt-datatable--default > table > tbody.ps {padding-bottom:0;}
+    /*.kt-datatable.kt-datatable--default > table > tbody tr > td {font-weight:regular;}*/
+      .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--check > span > .kt-checkbox {top:1px;}
+    .kt-datatable.kt-datatable--default > table > tbody tr-detail {display:block;}
+      .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail {display:block;padding:0 60px;}
+        .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail tr {display:table-row;}
+          .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail tr > .kt-datatable__cell {  padding:8px 12px;  text-align:left;  vertical-align:top;}
+            .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail tr > .kt-datatable__cell > span {    width:auto !important;}
+            .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail tr > .kt-datatable__cell:first-child {    font-weight:500;}
+            .kt-datatable.kt-datatable--default > table > tbody tr-detail .kt-datatable__detail tr > .kt-datatable__cell:last-child {    font-weight:regular;padding-left:20px;}
+  .kt-datatable.kt-datatable--default.kt-datatable--error tbody {padding:30px;text-align:center;}
+  .kt-datatable.kt-datatable--default.kt-datatable--lock > table > thead > .kt-datatable__lock,
+  .kt-datatable.kt-datatable--default.kt-datatable--lock > table > tbody > .kt-datatable__lock,
+  .kt-datatable.kt-datatable--default.kt-datatable--lock > table > tfoot > .kt-datatable__lock {display:inline-block;position:relative;vertical-align:top;overflow:hidden;}
+  .kt-datatable.kt-datatable--default.kt-datatable--loaded {display:block;}
+    .kt-datatable.kt-datatable--default.kt-datatable--loaded > table {display:block;}
+      .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > thead,
+      .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > tbody,
+      .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > tfoot {visibility:visible;/*display:block;*/position:relative;}
+        .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > thead tr,
+        .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > tbody tr,
+        .kt-datatable.kt-datatable--default.kt-datatable--loaded > table > tfoot tr {/*display:table;table-layout:initial;*/}
+  .kt-datatable.kt-datatable--default.kt-datatable--scroll > table {display:block;}
+    .kt-datatable.kt-datatable--default.kt-datatable--scroll > table > thead,
+    .kt-datatable.kt-datatable--default.kt-datatable--scroll > table > tfoot {overflow:hidden;}
+      .kt-datatable.kt-datatable--default.kt-datatable--scroll > table > thead tr,
+      .kt-datatable.kt-datatable--default.kt-datatable--scroll > table > tfoot tr {position:relative;}
+    .kt-datatable.kt-datatable--default.kt-datatable--scroll > table > tbody {overflow:hidden;}
+  .kt-datatable.kt-datatable--default > .kt-datatable__pager {margin:0px;padding:25px;padding-bottom:0;display:flex;justify-content:space-between;flex-wrap:wrap;}
+    .kt-datatable.kt-datatable--default > .kt-datatable__pager.kt-datatable__pager--top {margin-bottom:20px;}
+    .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav {margin:0;padding:0;display:flex;}
+      .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li {padding:0;margin-right:5px;display:inline-block;}
+        .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li:last-child {margin-right:0;}
+        .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link {cursor:pointer;display:flex;justify-content:center;align-items:center;height:2.25rem;min-width:2.25rem;padding:0.5rem;border-radius:3px;position:relative;font-size:1rem;line-height:1rem;font-weight:500;}
+          .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link > i {  font-size:0.6rem;  text-align:center;  display:inline-block;}
+          .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--more-prev, .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--more-next {  font-weight:600;}
+        .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-pager-input {height:2.25rem;width:3.5rem;text-align:center;border-radius:3px !important;}
+    .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-info {display:flex;align-items:center;}
+      .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size {margin-right:10px;}
+        .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle {height:2.25rem;padding:0.45rem 1rem;}
+        .kt-datatable.kt-datatable--default > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .dropdown-menu.inner > li.selected > a span.check-mark {margin-top:-0.6rem;}
+  .kt-datatable.kt-datatable--default.kt-datatable--subtable > table {margin-bottom:0;}
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead .kt-datatable__toggle-subtable,
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody .kt-datatable__toggle-subtable,
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot .kt-datatable__toggle-subtable {display:flex;justify-content:center;align-items:center;}
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead .kt-datatable__toggle-subtable > i,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody .kt-datatable__toggle-subtable > i,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot .kt-datatable__toggle-subtable > i {line-height:0;font-size:1.4rem;}
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead .kt-datatable__toggle-subtable:hover,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody .kt-datatable__toggle-subtable:hover,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot .kt-datatable__toggle-subtable:hover {text-decoration:none;}
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead tr-subtable,
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtable,
+    .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot tr-subtable {display:table;width:100%;}
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead tr-subtable > .kt-datatable__subtable,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtable > .kt-datatable__subtable,
+      .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot tr-subtable > .kt-datatable__subtable {padding:20px;}
+        .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > thead tr-subtable > .kt-datatable__subtable > .kt-datatable > .kt-datatable__pager,
+        .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtable > .kt-datatable__subtable > .kt-datatable > .kt-datatable__pager,
+        .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tfoot tr-subtable > .kt-datatable__subtable > .kt-datatable > .kt-datatable__pager {padding-top:10px;padding-bottom:10px;}
+
+@media (max-width:768px) {
+    /*.kt-datatable.kt-datatable--default {margin-bottom:15px;}*/
+    .kt-datatable.kt-datatable--default > table > thead tr > th:first-child,
+    .kt-datatable.kt-datatable--default > table > tbody tr > td:first-child,
+    .kt-datatable.kt-datatable--default > table > tfoot tr > td:first-child {padding-left:15px;}
+    .kt-datatable.kt-datatable--default > table > thead tr > th:last-child,
+    .kt-datatable.kt-datatable--default > table > tbody tr > td:last-child,
+    .kt-datatable.kt-datatable--default > table > tfoot tr > td:last-child {padding-right:15px;}
+    .kt-datatable.kt-datatable--default > .kt-datatable__pager {margin:0;padding:15px 15px 7.5px 15px;}
+      .kt-datatable.kt-datatable--default > .kt-datatable__pager .kt-datatable__pager-nav,
+      .kt-datatable.kt-datatable--default > .kt-datatable__pager .kt-datatable__pager-info {margin-top:10px;}
+}
+
+.kt-datatable > table {background-color:#fff;}
+  .kt-datatable > table > thead > .kt-datatable__lock.kt-datatable__lock--left,
+  .kt-datatable > table > tbody > .kt-datatable__lock.kt-datatable__lock--left,
+  .kt-datatable > table > tfoot > .kt-datatable__lock.kt-datatable__lock--left {z-index:1;box-shadow:0px 0px 17px 5px rgba(113, 106, 202, 0.14);}
+  .kt-datatable > table > thead > .kt-datatable__lock.kt-datatable__lock--right,
+  .kt-datatable > table > tbody > .kt-datatable__lock.kt-datatable__lock--right,
+  .kt-datatable > table > tfoot > .kt-datatable__lock.kt-datatable__lock--right {box-shadow:0px 0px 17px 5px rgba(113, 106, 202, 0.14);}
+  .kt-datatable > table > thead > .kt-datatable__lock.kt-datatable__lock--scroll,
+  .kt-datatable > table > tbody > .kt-datatable__lock.kt-datatable__lock--scroll,
+  .kt-datatable > table > tfoot > .kt-datatable__lock.kt-datatable__lock--scroll {position:relative;}
+  .kt-datatable > table > thead tr,
+  .kt-datatable > table > tbody tr,
+  .kt-datatable > table > tfoot tr {border-bottom:1px solid #f0f3ff;}
+    .kt-datatable > table > thead tr > th .kt-checkbox.kt-checkbox--solid > span,
+    .kt-datatable > table > tbody tr > td .kt-checkbox.kt-checkbox--solid > span,
+    .kt-datatable > table > tfoot tr > td .kt-checkbox.kt-checkbox--solid > span {background:#f0f3ff;}
+    .kt-datatable > table > thead tr > th .kt-checkbox.kt-checkbox--solid > input:checked ~ span,
+    .kt-datatable > table > tbody tr > td .kt-checkbox.kt-checkbox--solid > input:checked ~ span,
+    .kt-datatable > table > tfoot tr > td .kt-checkbox.kt-checkbox--solid > input:checked ~ span {background:#e8ecfa;}
+  .kt-datatable > table > tbody .kt-datatable__toggle-detail {vertical-align:middle;}
+    .kt-datatable > table > tbody .kt-datatable__toggle-detail i {transition:color 0.3s ease;color:#2986FF;}
+      .kt-datatable > table > tbody .kt-datatable__toggle-detail i:before {line-height:0;vertical-align:middle;}
+    .kt-datatable > table > tbody .kt-datatable__toggle-detail:hover i, .kt-datatable > table > tbody .kt-datatable__toggle-detail.kt-datatable__toggle-detail--active i {transition:color 0.3s ease;color:#2986FF;}
+  .kt-datatable > table > tbody tr-detail .kt-datatable__detail table {border-left:1px solid #f0f3ff;border-right:1px solid #f0f3ff;}
+  .kt-datatable > table > thead tr > th,
+  .kt-datatable > table > tfoot tr > td {background:transparent;}
+    .kt-datatable > table > thead tr > th > span,
+    .kt-datatable > table > tfoot tr > td > span {color:#595d6e;}
+  .kt-datatable > table > thead tr > th > span > i {color:#2986FF;}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link {color:#5286ca;transition:all 0.3s;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--first, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--prev, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--next, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--last {background:#f0f3ff;}
+    .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--first:hover, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--prev:hover, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--next:hover, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--last:hover {background:#2986FF;color:#ffffff;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link:hover {transition:all 0.3s;background:#2986FF;color:#ffffff;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--active {background:#2986FF;color:#ffffff;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--disabled, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--disabled:hover {color:#5286ca;background:#f0f3ff;opacity:0.3;}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-pager-input {transition:all 0.3s;background:#f0f3ff;border-color:#f0f3ff;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-pager-input:focus {transition:all 0.3s;background:#2986FF;border-color:#2986FF;}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle {font-size:1rem;font-weight:500;border:0 !important;color:#5286ca;background:#f0f3ff;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle i {color:#ffffff;}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle:focus,
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle:hover,
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size.show > .btn.dropdown-toggle {border:0 !important;color:#ffffff !important;background:#2986FF;}
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle:focus i,
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle:hover i,
+  .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size.show > .btn.dropdown-toggle i {color:#ffffff !important;}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .dropdown-menu {z-index:100;}
+  .modal .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .dropdown-menu {z-index:1051;}
+
+.kt-datatable.kt-datatable--subtable > table > tbody .kt-datatable__toggle-subtable > i {color:#2986FF;}
+
+.kt-datatable.kt-datatable--subtable > table > tbody tr-subtable {border-top:0;}
+
+.kt-datatable.kt-datatable--default > table > tbody tr > td {transition:background 0.3s ease;}
+  .kt-datatable.kt-datatable--default > table > tbody tr > td > span {color:#595d6e;}
+  .kt-datatable.kt-datatable--default > table > tbody tr > td.kt-datatable__cell--hover {transition:background 0.3s ease;background:transparent;}
+
+.kt-datatable.kt-datatable--default > table > tbody trtr--even > .kt-datatable__cell {background:transparent;}
+
+.kt-datatable.kt-datatable--default > table > tbody trtr--active > .kt-datatable__cell {background:#f7f8fa;}
+
+.kt-datatable.kt-datatable--default > table > tbody trtr--hover:not(tr--active) {transition:background 0.3s ease;}
+  .kt-datatable.kt-datatable--default > table > tbody trtr--hover:not(tr--active) > .kt-datatable__cell {transition:background 0.3s ease;background:transparent;}
+
+.kt-datatable.kt-datatable--default > table > thead tr > th.kt-datatable__cell--sorted > span,
+.kt-datatable.kt-datatable--default > table > tfoot tr > td.kt-datatable__cell--sorted > span {color:#2986FF;}
+
+.kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody trtr--subtable-expanded > .kt-datatable__cell {background:#f7f8fa !important;}
+
+.kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtable {background:transparent;}
+  .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtable > .kt-datatable__subtable > .kt-datatable {box-shadow:0px 0px 15px 1px rgba(113, 106, 202, 0.1);}
+  .kt-datatable.kt-datatable--default.kt-datatable--subtable > table > tbody tr-subtabletr-loading > .kt-datatable__subtable > .kt-datatable > table {background:transparent;}
+
+.kt-datatable .ps > .ps__rail-y > .ps__thumb-y,
+.kt-datatable .ps > .ps__rail-x > .ps__thumb-x {background:#dbe2f7;}
+  .kt-datatable .ps > .ps__rail-y > .ps__thumb-y:hover, .kt-datatable .ps > .ps__rail-y > .ps__thumb-y:focus,
+  .kt-datatable .ps > .ps__rail-x > .ps__thumb-x:hover,
+  .kt-datatable .ps > .ps__rail-x > .ps__thumb-x:focus {background:#dbe2f7;}

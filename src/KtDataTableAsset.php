@@ -6,7 +6,7 @@ class KtDataTableAsset extends \kilyakus\widgets\AssetBundle
     public function init()
     {
         $this->setSourcePath(__DIR__ . '/assets');
-        $this->setupAssets('css', ['css/ktdatatable'],'widget-ktdatatable');
+        $this->setupAssets('css', ['css/kt-datatable'],'widget-ktdatatable');
         parent::init();
     }
 }

@@ -7,7 +7,7 @@ use yii\helpers\Html;
 use mcomscience\datatables\DataTables;
 use kilyakus\portlet\Portlet;
 
-class BootstrapTable extends Widget
+class KtDataTable extends Widget
 {
     const TYPE_DEFAULT = 'default';
 
@@ -93,6 +93,8 @@ class BootstrapTable extends Widget
             Portlet::end();
         }
         $this->renderDataTables();
+
+        KtDataTableAsset::register($this->getView());
     }
 
     protected static function initCss(&$options, $css)

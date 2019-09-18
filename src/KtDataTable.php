@@ -163,6 +163,24 @@ class KtDataTable extends Widget
                 $rowOptions = ArrayHelper::getValue($row, 'options', []);
                 $rows .= Html::beginTag('tr', $rowOptions);
                 foreach ($row['columns'] as $col) {
+                    $minWidth = '';
+                    if(isset($col['options']['width'])){
+                        $minWidth = $col['options']['width'];
+                        if(is_int($minWidth)){
+                            $minWidth = $minWidth . 'px';
+                        }
+                    }else{
+                        $counter = 0;
+                        foreach ($row['columns'] as $checkWidth) {
+                            if(!isset($checkWidth['options']['width'])){
+                                $counter++;
+                            }
+                        }
+                        $minWidth = (1 / $counter * 100) . '%';
+                        $col['options']['width'] = $minWidth;
+                    }
+                    Html::addCssStyle($col['options'], 'min-width:' . $minWidth . ';');
+
                     $colOptions = ArrayHelper::getValue($col, 'options', []);
                     $colContent = ArrayHelper::getValue($col, 'content', '');
                     $tag = ArrayHelper::getValue($col, 'tag', 'th');

@@ -1,7 +1,7 @@
 .kt-datatable {display:none;}
 
 /*.kt-datatable.kt-datatable--default {display:block;margin-bottom:25px;}*/
-  .kt-datatable.kt-datatable--default > table {border-collapse:collapse;overflow:hidden;display:none;width:100%;}
+  .kt-datatable.kt-datatable--default > table {border-collapse:collapse;overflow-x:auto;display:none;width:100%;}
     .kt-datatable.kt-datatable--default > table > thead,
     .kt-datatable.kt-datatable--default > table > tbody,
     .kt-datatable.kt-datatable--default > table > tfoot {visibility:hidden;/*display:block;*/}

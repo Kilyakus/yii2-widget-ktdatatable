@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+        "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "kilyakus/yii2-widget-base": "*",
         "kilyakus/yii2-widget-portlet": "*"
